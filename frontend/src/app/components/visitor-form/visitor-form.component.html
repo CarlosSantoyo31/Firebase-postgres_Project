@@ -1,0 +1,43 @@
+<div class="body">
+  <div class="container">
+    <h2 class="title">
+      {{ isEdit ? "Actualizar Visitante " : "Registar Visitante" }}
+    </h2>
+
+    <form class="main-form m-3">
+      <label>Nombre del Visitante</label>
+      <input
+        type="text"
+        class="input"
+        [(ngModel)]="visitor.name"
+        name="name"
+        placeholder="Nombre del Visitante"
+      />
+
+      <label>Apellidos del Visitante</label>
+      <input
+        type="text"
+        class="input"
+        [(ngModel)]="visitor.last_name"
+        name="last_name"
+        placeholder="Apellido del Visitante"
+      />
+
+      <label>Motivo del Visitante</label>
+      <input
+        type="text"
+        class="input"
+        [(ngModel)]="visitor.reason"
+        name="reason"
+        placeholder="Motivo del Visitante"
+      />
+
+      <div class="btn-container">
+        <button (click)="save()" class="btn btn-secondary">
+          {{ isEdit ? "Actualizar" : "Crear" }}
+        </button>
+        <button class="btn btn-danger" routerLink="/visitors">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>

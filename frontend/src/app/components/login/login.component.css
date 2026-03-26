@@ -1,0 +1,26 @@
+.login-card {
+    text-align: center;
+    margin: 2rem auto; 
+    background-color: #94949c;
+    width: 60%; 
+    height: 60%; 
+    border-radius: 20px;
+    padding: 2rem; 
+}
+
+.login-text {
+    color: #333;
+    font-size: 1.1rem; 
+    margin-bottom: 1.5rem; 
+    font-weight: 500;
+}
+
+.btn-login {
+    width: 60%; 
+    height: 3rem;
+  border-width: 0;
+  border-radius: 0.5rem;
+  font-size: large;
+  font-weight: bold;
+  color: #eeeeee;
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <div class="container p-1">
+      <h2 class="title">Categorías</h2>
+
+      <div class="btn-create-container">
+        <button class="btn-create" routerLink="/categories/new">
+          + Nueva Categoría
+        </button>
+      </div>
+
+      @for (c of categories; track c.categoryId) {
+        <div class="info-card">
+          <h4><b>Nombre de la Categoría: </b> {{ c.name }}</h4>
+          <div class="btn-container">
+            @if (c.categoryId) {
+              <button class="btn btn-secondary" [routerLink]="['/categories/edit', c.categoryId]">Editar</button>
+            }
+            <button class="btn btn-danger" (click)="delete(c.categoryId!)">Eliminar</button>
+          </div>
+        </div>
+      }
+    </div>
+  </body>
+</html>

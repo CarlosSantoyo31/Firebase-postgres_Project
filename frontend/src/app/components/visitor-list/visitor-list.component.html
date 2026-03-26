@@ -1,0 +1,33 @@
+<div class="body">
+  <div class="container p-1">
+    <h2 class="title">Visitantes</h2>
+
+    <div class="btn-create-container">
+      <button class="btn-create" routerLink="/visitors/new">
+        -- Resigtrar Visitante --
+      </button>
+    </div>
+
+    @for (v of visitors; track v.id) {
+      <div class="info-card">
+        <h4>Visitante: {{ v.name + " " + v.last_name}}</h4>
+        <p><em>Fecha de Visita: </em> {{ toDate(v.date) | date: 'dd/MM/yyyy HH:mm'}}</p>
+        <p><b>Motivo de Visita: </b> {{ v.reason }}</p>
+
+        <div class="btn-container">
+          @if (v.id) {
+            <button
+              class="btn btn-secondary"
+              [routerLink]="['/visitors/edit', v.id]"
+            >
+              Editar
+            </button>
+          }
+          <button class="btn btn-danger" (click)="delete(v.id!)">
+            Eliminar
+          </button>
+        </div>
+      </div>
+    }
+  </div>
+</div>

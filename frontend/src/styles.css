@@ -1,0 +1,115 @@
+.main-navbar {
+  background-color: #bd2052;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5rem;
+}
+
+.user-data-ctn {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-img {
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.navbar-text {
+  font-size: medium;
+}
+
+.navbar-btn {
+  background-color: #bd1883;
+  height: 3rem;
+  border-width: 0;
+  border-radius: 0.5rem;
+  font-size: large;
+  font-weight: bold;
+  color: #eeeeee;
+}
+
+.body {
+  background-color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: #eeeeee;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.btn-create {
+  margin: 1rem;
+  width: 100%;
+  background-color: #94949c;
+  height: 3rem;
+  border-width: 0;
+  border-radius: 0.5rem;
+  font-size: large;
+  font-weight: bold;
+  color: #eeeeee;
+}
+
+.btn-create-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info-card {
+  background-color: #c5c5c5;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.info-card h4 {
+  color: #bd2052;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #bd2052;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.input {
+  margin-bottom: 1rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: #333;
+}
+
+select {
+  height: 2.5rem;
+  padding-left: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.select-container {
+  margin-bottom: 2rem;
+}
